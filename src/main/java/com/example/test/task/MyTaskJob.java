@@ -27,10 +27,8 @@ public class MyTaskJob extends QuartzJobBean
 
     @Autowired
     private JybgServicer JybgServicer;
-
     @Resource
     JybgRepostory JybgRepostory;
-
     @Override
     protected void executeInternal(JobExecutionContext context) throws JobExecutionException {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");

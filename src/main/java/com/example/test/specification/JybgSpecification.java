@@ -14,6 +14,7 @@ public class JybgSpecification {
     /**
      * root 就是mobile实例  root.get("name") name是属性名 不是数据库字段名
      * @return
+     *
      * */
     public Specification<Jybg> getMobileSpecification() {
         return (root, criteriaQuery, criteriaBuilder) -> {
